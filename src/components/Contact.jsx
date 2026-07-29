@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <section className="bg-[#090909] text-white py-24">
+    <section id="contact" className="bg-[#090909] text-white py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.div

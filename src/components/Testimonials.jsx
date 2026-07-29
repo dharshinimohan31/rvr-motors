@@ -3,20 +3,23 @@ import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-  name: "Rahul S.",
-  review:
-    "Excellent detailing service! My Hyundai Creta looks brand new.",
-},
-{
-  name: "Priya K.",
-  review:
-    "Professional ceramic coating for my Honda City. Highly recommended!",
-},
-{
-  name: "Arun M.",
-  review:
-    "Outstanding workmanship on my BMW. Great attention to detail.",
-},
+    name: "Rahul S.",
+    review:
+      "Excellent detailing service! My Hyundai Creta looks brand new.",
+    car: "Hyundai Creta",
+  },
+  {
+    name: "Priya K.",
+    review:
+      "Professional ceramic coating for my Honda City. Highly recommended!",
+    car: "Honda City",
+  },
+  {
+    name: "Arun M.",
+    review:
+      "Outstanding workmanship on my BMW. Great attention to detail.",
+    car: "BMW 3 Series",
+  },
 ];
 
 function Testimonials() {
@@ -64,7 +67,7 @@ function Testimonials() {
                 {item.name}
               </h3>
 
-              <p className="text-red-600">
+              <p className="text-red-600 mt-2">
                 {item.car}
               </p>
             </motion.div>

@@ -15,13 +15,12 @@ function Hero() {
 
   return (
     <section
+      id="home"
       className="relative h-screen bg-cover bg-center flex items-center"
       style={{ backgroundImage: `url(${hero})` }}
     >
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Content */}
       <div className="relative max-w-7xl mx-auto px-8 lg:px-20 w-full">
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -62,22 +61,21 @@ function Hero() {
         >
           <button
             onClick={() => scrollToSection("appointment")}
-            className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full text-white font-semibold transition duration-300 cursor-pointer"
+            className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full text-white font-semibold"
           >
             Book Appointment
           </button>
 
           <button
             onClick={() => scrollToSection("services")}
-            className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-white font-semibold transition duration-300 cursor-pointer"
+            className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-white font-semibold"
           >
             Explore Services
           </button>
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce text-sm">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce">
         ↓ Scroll
       </div>
     </section>

@@ -11,7 +11,7 @@ const images = [car1, car2, car3, car4, car5, car6];
 
 function Gallery() {
   return (
-    <section className="bg-black py-24 text-white">
+    <section id="gallery" className="bg-black py-24 text-white">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.div
